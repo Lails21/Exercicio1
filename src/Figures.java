@@ -1,4 +1,8 @@
-package PACKAGE_NAME;
+abstract public class Figures implements Comparable<Figures> {
+   abstract public double area();
 
-public class Figures {
+   @Override
+   public int compareTo(Figures o) {
+      return (int) (this.area()-o.area());
+   }
 }

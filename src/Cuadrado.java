@@ -1,4 +1,7 @@
-package PACKAGE_NAME;
+public class Cuadrado extends Rectangulo {
 
-public class Cuadrado {
+    public Cuadrado(double l) {
+
+        super(l, l);
+    }
 }

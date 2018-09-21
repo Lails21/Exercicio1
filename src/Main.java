@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -20,5 +22,11 @@ public class Main {
         double suma;
         suma = FiguresGeometriques.Suma(fs);
         System.out.println(suma);
+
+        FiguresGeometriques.Sort(fs);
+        for (Figures l: fs) {
+            System.out.println(l.getClass().getName()+ " " + l.area());
+        }
+
     }
 }

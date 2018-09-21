@@ -1,4 +1,13 @@
-package PACKAGE_NAME;
+public class Circulo extends Figures {
 
-public class Circulo {
+    public double radi;
+    public double area() {
+        return (radi*radi)*3.14;
+    }
+
+    public Circulo (double radi) {
+        this.radi = radi;
+    }
+
+
 }
